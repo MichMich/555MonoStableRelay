@@ -1,0 +1,31 @@
+G04 Gerber job file with board parameters*
+%TF.FileFunction,JobInfo*%
+%TF.Part,SinglePCB*%
+G04 Single PCB fabrication instructions*
+%TF.GenerationSoftware,KiCad,Pcbnew,(2017-10-17 revision 537804b)-master*%
+%TF.CreationDate,2017-12-28T11:37:30+01:00*%
+%TF.ProjectId,MonoStable555,4D6F6E6F537461626C653535352E6B69,rev?*%
+%MOMM*%
+G04 Overall board parameters*
+%TJ.B.Size.X,30.630*%
+%TJ.B.Size.Y,39.520*%
+%TJ.B.LayerNum,2*%
+%TJ.B.Overall.Thickness,1.600*%
+%TJ.B.Legend.Present,Both*%
+%TJ.B.SolderMask.Present,Both*%
+G04 board design rules*
+%TJ.D.PadToPad.Out,0.200*%
+%TJ.D.PadToTrack.Out,0.200*%
+%TJ.D.TrackToTrack.Out,0.200*%
+%TJ.D.MinLineWidth.Out,0.300*%
+%TJ.D.TrackToRegion.Out,0.508*%
+%TJ.D.RegionToRegion.Out,0.508*%
+G04 Layer Structure*
+%TJ.L."Copper,L1,Top",Positive,MonoStable555-F.Cu.gtl*%
+%TJ.L."Copper,L2,Bot",Positive,MonoStable555-B.Cu.gbl*%
+%TJ.L."Legend,Bot",Positive,MonoStable555-B.SilkS.gbo*%
+%TJ.L."Legend,Top",Positive,MonoStable555-F.SilkS.gto*%
+%TJ.L."SolderMask,Bot",Negative,MonoStable555-B.Mask.gbs*%
+%TJ.L."SolderMask,Top",Negative,MonoStable555-F.Mask.gts*%
+%TJ.L."Profile",Positive,MonoStable555-Edge.Cuts.gm1*%
+M02*

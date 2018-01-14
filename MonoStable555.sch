@@ -1,0 +1,326 @@
+EESchema Schematic File Version 3
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:relays
+LIBS:MonoStable555-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 5A43E95B
+P 2000 2250
+F 0 "R1" H 2070 2296 50  0000 L CNN
+F 1 "10K" H 2070 2205 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1930 2250 50  0001 C CNN
+F 3 "" H 2000 2250 50  0000 C CNN
+	1    2000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW1
+U 1 1 5A43EC49
+P 2000 2800
+F 0 "SW1" V 2046 2752 50  0000 R CNN
+F 1 "TRIGGER" V 1955 2752 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x01_Pitch2.54mm" H 2000 3000 50  0001 C CNN
+F 3 "" H 2000 3000 50  0000 C CNN
+	1    2000 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5A43ED61
+P 4200 2850
+F 0 "C2" H 4085 2804 50  0000 R CNN
+F 1 "0.01uF" H 4085 2895 50  0000 R CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4238 2700 50  0001 C CNN
+F 3 "" H 4200 2850 50  0000 C CNN
+	1    4200 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C1
+U 1 1 5A43EE1A
+P 3100 2850
+F 0 "C1" H 3218 2896 50  0000 L CNN
+F 1 "470uF" H 3218 2805 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 3138 2700 50  0001 C CNN
+F 3 "" H 3100 2850 50  0000 C CNN
+	1    3100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 5A43EE90
+P 4900 2350
+F 0 "D2" V 4854 2429 50  0000 L CNN
+F 1 "1N4148" V 4945 2429 50  0000 L CNN
+F 2 "Diodes_THT:D_A-405_P7.62mm_Horizontal" H 4900 2350 50  0001 C CNN
+F 3 "" H 4900 2350 50  0000 C CNN
+	1    4900 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L TLC555 U1
+U 1 1 5A43EF29
+P 3700 2500
+F 0 "U1" H 3350 2850 50  0000 C CNN
+F 1 "TLC555" H 3900 2850 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3750 2250 50  0001 L CNN
+F 3 "" H 4350 1950 50  0000 C CNN
+	1    3700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR01
+U 1 1 5A43EFBD
+P 1900 2000
+F 0 "#PWR01" H 1900 1850 50  0001 C CNN
+F 1 "+12V" V 1915 2128 50  0000 L CNN
+F 2 "" H 1900 2000 50  0000 C CNN
+F 3 "" H 1900 2000 50  0000 C CNN
+	1    1900 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A43F09C
+P 3700 3100
+F 0 "#PWR02" H 3700 2850 50  0001 C CNN
+F 1 "GND" H 3705 2927 50  0000 C CNN
+F 2 "" H 3700 3100 50  0000 C CNN
+F 3 "" H 3700 3100 50  0000 C CNN
+	1    3700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L IM00 K1
+U 1 1 5A43F5E9
+P 5400 2700
+F 0 "K1" V 6250 2850 50  0000 C CNN
+F 1 "RELAY" V 6250 2600 50  0000 C CNN
+F 2 "Relay:Relay_DPDT_Omron_G5V-2" H 5400 2700 50  0001 C CNN
+F 3 "" H 5400 2700 50  0000 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A43F687
+P 4600 2750
+F 0 "D1" V 4638 2633 50  0000 R CNN
+F 1 "LED" V 4547 2633 50  0000 R CNN
+F 2 "LEDs:LED_D3.0mm" H 4600 2750 50  0001 C CNN
+F 3 "" H 4600 2750 50  0000 C CNN
+	1    4600 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A43F6E1
+P 4600 2350
+F 0 "R2" H 4530 2304 50  0000 R CNN
+F 1 "560" H 4530 2395 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4530 2350 50  0001 C CNN
+F 3 "" H 4600 2350 50  0000 C CNN
+	1    4600 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 5A43F78D
+P 5600 1900
+F 0 "P1" V 5800 2050 50  0000 R CNN
+F 1 "CONTACT" V 5700 2050 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5600 1900 50  0001 C CNN
+F 3 "" H 5600 1900 50  0000 C CNN
+	1    5600 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 5A43F7ED
+P 6000 1900
+F 0 "P2" V 6200 2050 50  0000 R CNN
+F 1 "CONTACT" V 6100 2050 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6000 1900 50  0001 C CNN
+F 3 "" H 6000 1900 50  0000 C CNN
+	1    6000 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 5A43ECF3
+P 2500 2300
+F 0 "RV1" V 2293 2300 50  0000 C CNN
+F 1 "1M" V 2384 2300 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_ACP_CA9v_Horizontal_Px10.0mm_Py5.0mm" H 2500 2300 50  0001 C CNN
+F 3 "" H 2500 2300 50  0000 C CNN
+	1    2500 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 2000 4200 2000
+Wire Wire Line
+	4200 2000 4200 2300
+Wire Wire Line
+	3700 2100 3700 2000
+Connection ~ 3700 2000
+Wire Wire Line
+	3200 2600 3100 2600
+Wire Wire Line
+	3100 2300 3100 2700
+Wire Wire Line
+	2650 2300 3200 2300
+Wire Wire Line
+	2350 2300 2300 2300
+Wire Wire Line
+	2300 2300 2300 2000
+Connection ~ 2300 2000
+Wire Wire Line
+	3700 2800 3700 3100
+Wire Wire Line
+	2000 3000 5200 3000
+Connection ~ 3100 3000
+Wire Wire Line
+	2000 2400 2000 2600
+Wire Wire Line
+	2000 2100 2000 2000
+Connection ~ 2000 2000
+Wire Wire Line
+	3200 2500 2000 2500
+Connection ~ 2000 2500
+Connection ~ 3100 2300
+Wire Wire Line
+	2500 2450 2700 2450
+Wire Wire Line
+	2700 2450 2700 2300
+Connection ~ 2700 2300
+Wire Wire Line
+	4200 2700 4200 2600
+Connection ~ 3700 3000
+Connection ~ 3100 2600
+Connection ~ 4200 3000
+Connection ~ 4900 3000
+Wire Wire Line
+	4600 3000 4600 2900
+Connection ~ 4600 3000
+Wire Wire Line
+	5200 2000 5200 2400
+Wire Wire Line
+	4400 2000 5200 2000
+Wire Wire Line
+	4400 2000 4400 2500
+Wire Wire Line
+	4400 2500 4200 2500
+Connection ~ 4600 2000
+Wire Wire Line
+	4900 2200 4900 2000
+Connection ~ 4900 2000
+Wire Wire Line
+	4900 3000 4900 2500
+Wire Wire Line
+	6100 2400 6100 2100
+Wire Wire Line
+	5900 2400 5900 2100
+Wire Wire Line
+	5700 2400 5700 2100
+Wire Wire Line
+	5500 2400 5500 2100
+Wire Wire Line
+	6000 2100 6000 2300
+Wire Wire Line
+	6000 2300 6300 2300
+Wire Wire Line
+	6300 2300 6300 3100
+Wire Wire Line
+	6300 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 3000
+Wire Wire Line
+	5600 2100 5600 2200
+Wire Wire Line
+	5600 2200 6400 2200
+Wire Wire Line
+	6400 2200 6400 3200
+Wire Wire Line
+	6400 3200 5600 3200
+Wire Wire Line
+	5600 3200 5600 3000
+Wire Wire Line
+	4600 2600 4600 2500
+Wire Wire Line
+	4600 2200 4600 2000
+$Comp
+L CONN_01X02 P3
+U 1 1 5A442BE8
+P 6750 1900
+F 0 "P3" V 6715 1762 50  0000 R CNN
+F 1 "12V" V 6624 1762 50  0000 R CNN
+F 2 "Wire_Connections_Bridges:WireConnection_1.20mmDrill" H 6750 1900 50  0001 C CNN
+F 3 "" H 6750 1900 50  0000 C CNN
+	1    6750 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5A442D45
+P 6800 2100
+F 0 "#PWR04" H 6800 1850 50  0001 C CNN
+F 1 "GND" H 6805 1927 50  0000 C CNN
+F 2 "" H 6800 2100 50  0000 C CNN
+F 3 "" H 6800 2100 50  0000 C CNN
+	1    6800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR03
+U 1 1 5A442EBC
+P 6700 2100
+F 0 "#PWR03" H 6700 1950 50  0001 C CNN
+F 1 "+12V" H 6715 2273 50  0000 C CNN
+F 2 "" H 6700 2100 50  0000 C CNN
+F 3 "" H 6700 2100 50  0000 C CNN
+	1    6700 2100
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
